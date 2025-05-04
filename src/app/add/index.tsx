@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { View, Text, TouchableOpacity, Alert } from "react-native";
+import { View, Text, TouchableOpacity, Alert, ImageBackground } from "react-native";
 import { MaterialIcons } from "@expo/vector-icons";
 import { styles } from "./style";
 import { colors } from "@/styles/colors";
@@ -40,25 +40,26 @@ export default function Add() {
     }
 
     return (
-        <View style={styles.container}>
-            <View style={styles.header}>
-                <TouchableOpacity onPress={() => router.back()}>
-                    <MaterialIcons name="arrow-back" size={32} color={colors.gray[200]} />
-                </TouchableOpacity>
+        <ImageBackground source={require("@/assets/wallpaper.jpeg")} style={styles.container}>
+            <View style={styles.containerContent}>
+                <View style={styles.header}>
+                    <TouchableOpacity onPress={() => router.back()}>
+                        <MaterialIcons name="arrow-back" size={32} color={colors.gray[200]} />
+                    </TouchableOpacity>
 
-                <Text style={styles.title}>Novo</Text>
+                    <Text style={styles.title}>Novo</Text>
+                </View>
+                <Text style={styles.label}>Selecione uma Categoria</Text>
+                <Categories onChange={setCategory} selected={category} />
+
+                <View style={styles.form}>
+                    <Input placeholder="Nome" onChangeText={setName} autoCorrect={false} />
+                    <Input placeholder="URL" onChangeText={setURL} autoCapitalize="none" autoCorrect={false} />
+
+                    <Button title="Adicionar" onPress={handleAdd} />
+                </View>
+
             </View>
-            <Text style={styles.label}>Selecione uma Categoria</Text>
-            <Categories onChange={setCategory} selected={category} />
-
-            <View style={styles.form}>
-                <Input placeholder="Nome" onChangeText={setName} autoCorrect={false} />
-                <Input placeholder="URL" onChangeText={setURL} autoCapitalize="none" autoCorrect={false} />
-
-                <Button title="Adicionar" onPress={handleAdd} />
-            </View>
-
-
-        </View>
+        </ImageBackground>
     )
 }

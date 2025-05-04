@@ -15,4 +15,7 @@ export const colors = {
         300: "#2DD4BF",
         900: "#042F2E",
     },
+    blue:{
+        900: "#3D90D7"
+    }
 }

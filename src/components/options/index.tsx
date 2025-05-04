@@ -14,7 +14,7 @@ type Props = TouchableOpacityProps & {
 export function Option({ name, icon, variant = "primary", ...rest }: Props) {
     return (
         <TouchableOpacity style={styles.container}{...rest} activeOpacity={0.6}>
-            <MaterialIcons name={icon} size={20} color={variant === "primary" ? colors.green[300] : colors.gray[400]} />
+            <MaterialIcons name={icon} size={20} color={variant === "primary" ? colors.blue[900] : colors.gray[400]} />
             <Text style={variant === "primary" ? styles.primaryTitle : styles.secondaryTitle}>{name}</Text>
         </TouchableOpacity>
     )
