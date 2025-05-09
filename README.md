@@ -4,7 +4,7 @@
 
 <p align="center">
 <img src="https://github.com/user-attachments/assets/c940e6ae-600e-4e2f-9d38-3036914f5f00" width=30% >
-p>
+/p>
 
 <h2>Código</h2>
 
