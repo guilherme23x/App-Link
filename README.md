@@ -2,8 +2,9 @@
 
 <p>Este app tem a capacidade de armazenar localmente no dispositivo, os links de sites, arquivos de compartilhamento e muito mais do usuário.</p>
 
-<img src="https://github.com/user-attachments/assets/c940e6ae-600e-4e2f-9d38-3036914f5f00" width=30%>
-
+<p align="center">
+<img src="https://github.com/user-attachments/assets/c940e6ae-600e-4e2f-9d38-3036914f5f00" width=30% >
+p>
 
 <h2>Código</h2>
 
